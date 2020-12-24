@@ -1,50 +1,71 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
-html {
+* {
   box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 body {
   margin: 0;
+  padding: 0;
   font-family: "Muli", sans-serif;
-  height: 100vh;
-  overflow: hidden;
 }
-ul {
-  cursor: pointer;
-  list-style-type: none;
-  color: #ffffff;
+.navbar {
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0px;
-  font-size: 24px;
   display: flex;
-  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.8);
   background-image: linear-gradient(
     to right,
     rgba(255, 0, 255, 0.979),
     #3906f0a1
   );
 }
-ul li {
-  margin: 16px;
-}
-
 .logo,
 .logo-sm {
-  width: 100%;
   color: rgb(255, 255, 255);
   font-size: bold;
+  margin: 0.5 rem;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 2.5rem;
   white-space: nowrap;
+  text-align: center;
+}
+.nav-contents ul {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-contents li {
+  list-style-type: none;
+}
+.nav-contents a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+}
+.nav-contents li:hover {
+  background-color: hsla(300, 100%, 50%, 0.856);
+}
+.toggle-button {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .logo {
     display: none;
   }
@@ -53,12 +74,35 @@ ul li {
     display: inline-block;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1001px) {
   .logo {
     display: inline-block;
   }
   .logo-sm {
     display: none;
+  }
+}
+@media (max-width: 660px) {
+  .toggle-button {
+    display: flex;
+  }
+  .nav-contents {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-contents ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-contents li {
+    text-align: center;
+  }
+  .nav-contents.active {
+    display: flex;
   }
 }
 .main-content {
