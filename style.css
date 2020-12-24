@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+ul {
+  cursor: pointer;
+  list-style-type: none;
+  color: #ffffff;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  font-size: 24px;
+  display: flex;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 255, 0.979),
+    #3906f0a1
+  );
+}
+ul li {
+  margin: 16px;
+}
+
+.logo,
+.logo-sm {
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-size: bold;
+  font-weight: 800;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .logo-sm {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .logo {
+    display: inline-block;
+  }
+  .logo-sm {
+    display: none;
+  }
+}
+.main-content {
+  padding: 5%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 10px;
+  background-color: #e580ff;
+  height: 100vh;
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 800px;
+}
