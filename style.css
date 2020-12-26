@@ -8,6 +8,7 @@ body {
   font-family: "Muli", sans-serif;
 }
 .navbar {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -25,9 +26,10 @@ body {
   font-size: bold;
   margin: 0.5 rem;
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   text-align: center;
+  padding: 1.5rem;
 }
 .nav-contents ul {
   cursor: pointer;
@@ -51,7 +53,7 @@ body {
 .toggle-button {
   position: absolute;
   right: 1rem;
-  top: 0.75rem;
+  top: 1.5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -81,6 +83,9 @@ body {
   .logo-sm {
     display: none;
   }
+  .skills {
+    flex-wrap: nowrap;
+  }
 }
 @media (max-width: 660px) {
   .toggle-button {
@@ -105,16 +110,35 @@ body {
     display: flex;
   }
 }
-.main-content {
-  padding: 5%;
+.aboutme-content {
+  padding: 10%;
   text-align: center;
   font-size: 2rem;
   font-weight: 10px;
   background-color: #e580ff;
   height: 100vh;
 }
+.myskills-content {
+  padding: 5%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 10px;
+  color: white;
+  background-color: #cf5feb;
+  height: 100vh;
+}
 img {
   width: 300px;
   height: 300px;
   border-radius: 800px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill-icon {
+  width: 50%;
+  padding-bottom: 50px;
+  font-size: 18px;
 }
