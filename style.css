@@ -14,11 +14,12 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgba(255, 0, 255, 0.979),
     #3906f0a1
-  );
+  ); */
+  background-color: #ac3dc9;
 }
 .logo,
 .logo-sm {
@@ -48,7 +49,8 @@ body {
   font-size: 1.5rem;
 }
 .nav-contents li:hover {
-  background-color: hsla(300, 100%, 50%, 0.856);
+  /* background-color: hsla(300, 100%, 50%, 0.856); */
+  background-color: #ffc75f;
 }
 .toggle-button {
   position: absolute;
@@ -72,8 +74,10 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: 10px;
-  background-color: #e580ff;
+  /* background-color: #e580ff; */
+  background-color: #8b15a8;
   height: 100vh;
+  color: white;
 }
 .myskills-content {
   padding: 5%;
