@@ -291,4 +291,7 @@ textarea {
   .project-glass {
     width: 100%;
   }
+  .contact-card {
+    width: 300px;
+  }
 }
