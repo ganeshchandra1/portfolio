@@ -13,18 +13,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.8);
+  /*box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.8);*/
   /* background-image: linear-gradient(
     to right,
     rgba(255, 0, 255, 0.979),
     #3906f0a1
   ); */
-  background-color: #583d72;
+  background-color: white;
   z-index: 1;
 }
 .logo,
 .logo-sm {
-  color: rgb(255, 255, 255);
+  color: #bc8fb6;
   font-size: bold;
   margin: 0.5 rem;
   font-weight: 800;
@@ -44,7 +44,7 @@ body {
 }
 .nav-contents a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 1.5rem;
   display: block;
   font-size: 1.5rem;
@@ -66,19 +66,20 @@ body {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color:#bc8fb6 ;
   border-radius: 10px;
 }
 
 .aboutme-content {
   padding: 5%;
-  padding-top: 32px;
+  padding-top: 80px;
   text-align: center;
   font-size: 38px;
   font-weight: 10px;
   /* background-color: #e580ff; */
-  background-color: #9c4c7d;
-  color: white;
+  /*background-color: #9c4c7d;*/
+  background-color: white;
+  color: black;
 }
 .myskills-content {
   padding: 5%;
@@ -86,11 +87,10 @@ body {
   font-size: 2rem;
   font-weight: 10px;
   color: white;
-  background-color: #895d8e;
+  background-color: #ff605f;
 }
 h2 {
   width: 100%;
-  background-color: #9c4c7d;
 }
 .myprojects {
   padding-top: 5%;
