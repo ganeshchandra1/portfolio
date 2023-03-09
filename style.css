@@ -162,8 +162,8 @@ img,
 }
 .contact {
   text-align: center;
-  background-color: #ff605f;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +173,7 @@ img,
   background-color: white;
   font-size: 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   color: #583d72;
@@ -185,56 +185,7 @@ img,
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-#email {
-  width: 100%;
-  padding: 12px;
-  margin: 0 0 10px 0;
-  outline: none;
-  font-size: 16px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border: 1px solid violet;
-}
-#name {
-  padding: 12px;
-  width: 100%;
-  margin: 0 0 10px 0;
-  outline: none;
-  border: 1px solid violet;
-  font-size: 16px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  transition: border 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-textarea {
-  padding: 12px;
-  width: 100%;
-  height: 100px;
-  margin: 0 0 10px 0;
-  outline: none;
-  resize: none;
-  font-size: 16px;
-  border-radius: 20px;
-  border: 1px solid violet;
-}
-#send-mail {
-  padding: 12px;
-  width: 100%;
-  margin: 0 0 10px 0;
-  outline: none;
-  font-size: 16px;
-  background-color: #8a5eb3;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-#send-mail:hover {
-  background-color: #664386;
-}
+
 
 @media only screen and (max-width: 1000px) {
   .logo {
