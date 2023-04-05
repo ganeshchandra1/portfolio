@@ -24,7 +24,7 @@ body {
 }
 .logo,
 .logo-sm {
-  color: #bc8fb6;
+  color: #ff605f;
   font-size: bold;
   margin: 0.5 rem;
   font-weight: 800;
@@ -51,7 +51,10 @@ body {
 }
 .nav-contents li:hover {
   /* background-color: hsla(300, 100%, 50%, 0.856); */
-  background-color: #ffc75f;
+  box-shadow: 0 0 4px #ff605f;
+  padding: 0.2rem;
+  color: white !important;
+  border-radius: 30%;
 }
 .toggle-button {
   position: absolute;
@@ -235,6 +238,7 @@ img,
   }
   .nav-contents.active {
     display: flex;
+    transition: 0.5s;
   }
   .projects-container {
     flex-wrap: wrap;
