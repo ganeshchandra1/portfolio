@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -52,7 +56,6 @@ body {
 .nav-contents li:hover {
   /* background-color: hsla(300, 100%, 50%, 0.856); */
   box-shadow: 0 0 4px #ff605f;
-  padding: 0.2rem;
   color: white !important;
   border-radius: 30%;
 }
@@ -69,7 +72,7 @@ body {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color:#bc8fb6 ;
+  background-color:#ff605f ;
   border-radius: 10px;
 }
 
@@ -218,6 +221,12 @@ img,
   }
 }
 @media (max-width: 660px) {
+  .nav-contents li:hover {
+    /* background-color: hsla(300, 100%, 50%, 0.856); */
+    box-shadow: none;
+    color: white !important;
+    border-radius: 30%;
+  }
   .toggle-button {
     display: flex;
   }
